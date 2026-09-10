@@ -23,6 +23,7 @@
         ========================== -->
         <aside class="sidebar" id="sidebar">
 
+            <!-- Logo -->
             <div class="sidebar-logo">
 
                 <div class="logo-mark">
@@ -37,13 +38,14 @@
             </div>
 
 
+            <!-- Navigation -->
             <nav class="sidebar-nav">
 
-                <!-- SALES — MAIN PAGE -->
+                <!-- SALES — DEFAULT PAGE -->
                 <button class="nav-item active" data-page="sales">
 
                     <span class="nav-icon">
-                        ◉
+                        ▤
                     </span>
 
                     <span class="nav-text">
@@ -67,20 +69,6 @@
                 </button>
 
 
-                <!-- PHONE CONNECTION -->
-                <button class="nav-item" data-page="connection">
-
-                    <span class="nav-icon">
-                        ◌
-                    </span>
-
-                    <span class="nav-text">
-                        ربط الهاتف
-                    </span>
-
-                </button>
-
-
                 <!-- REPORTS -->
                 <button class="nav-item" data-page="reports">
 
@@ -95,7 +83,21 @@
                 </button>
 
 
-                <!-- CONTACT -->
+                <!-- CONNECTION -->
+                <button class="nav-item" data-page="connection">
+
+                    <span class="nav-icon">
+                        ⛓
+                    </span>
+
+                    <span class="nav-text">
+                        الربط
+                    </span>
+
+                </button>
+
+
+                <!-- DEVELOPER -->
                 <button class="nav-item" data-page="developer">
 
                     <span class="nav-icon">
@@ -103,7 +105,7 @@
                     </span>
 
                     <span class="nav-text">
-                        تواصل معنا
+                        تواصل معنا / المطور
                     </span>
 
                 </button>
@@ -111,6 +113,7 @@
             </nav>
 
 
+            <!-- Sidebar Footer -->
             <div class="sidebar-footer">
                 <span>
                     STORE CORE
@@ -120,23 +123,21 @@
         </aside>
 
 
-
         <!-- =========================
              MAIN AREA
         ========================== -->
-
         <div class="main-area">
 
-
-            <!-- HEADER -->
-
+            <!-- =========================
+                 HEADER
+            ========================== -->
             <header class="top-header">
 
                 <button
                     class="mobile-menu-button"
                     id="mobileMenuButton"
                     type="button"
-                >
+                    aria-label="فتح القائمة">
                     ☰
                 </button>
 
@@ -156,24 +157,19 @@
             </header>
 
 
-
             <!-- =========================
                  PAGES
             ========================== -->
-
             <main class="page-content">
-
 
 
                 <!-- =================================
                      PAGE 1 — SALES
                 ================================== -->
-
                 <section
                     class="page active-page"
                     id="salesPage"
-                    data-page-content="sales"
-                >
+                    data-page-content="sales">
 
                     <div class="page-heading">
 
@@ -198,12 +194,10 @@
 
                     <div class="sales-container">
 
-
                         <!-- =========================
-                             SCANNER CARD
+                             SCANNER
                         ========================== -->
-
-                        <div class="card scanner-card">
+                        <div class="scanner-card">
 
                             <div class="scanner-card-header">
 
@@ -222,8 +216,7 @@
 
                                 <span
                                     class="connection-status"
-                                    id="scannerStatus"
-                                >
+                                    id="scannerStatus">
                                     غير متصل
                                 </span>
 
@@ -235,11 +228,8 @@
                                 <div class="scanner-frame">
 
                                     <div class="scanner-corner top-right"></div>
-
                                     <div class="scanner-corner top-left"></div>
-
                                     <div class="scanner-corner bottom-right"></div>
-
                                     <div class="scanner-corner bottom-left"></div>
 
                                     <div class="scanner-line"></div>
@@ -254,22 +244,21 @@
 
 
                             <button
-                                class="primary-button scanner-button"
-                                id="connectScannerButton"
                                 type="button"
-                            >
+                                class="primary-button scanner-button"
+                                id="connectScannerButton">
+
                                 توصيل الهاتف
+
                             </button>
 
                         </div>
 
 
-
                         <!-- =========================
-                             CURRENT SALE CARD
+                             CURRENT SALE
                         ========================== -->
-
-                        <div class="card current-sale-card">
+                        <div class="current-sale-card">
 
                             <div class="card-header">
 
@@ -288,8 +277,7 @@
 
                                 <span
                                     id="saleItemsCount"
-                                    class="items-count"
-                                >
+                                    class="items-count">
                                     0 منتجات
                                 </span>
 
@@ -298,8 +286,7 @@
 
                             <div
                                 class="sale-product-preview"
-                                id="saleProductPreview"
-                            >
+                                id="saleProductPreview">
 
                                 <div class="empty-state">
 
@@ -320,43 +307,37 @@
                             </div>
 
 
-
                             <!-- Quantity -->
-
                             <div
                                 class="quantity-section"
                                 id="quantitySection"
-                                hidden
-                            >
+                                hidden>
 
                                 <label for="saleQuantity">
                                     الكمية المباعة
                                 </label>
-
 
                                 <input
                                     type="number"
                                     id="saleQuantity"
                                     value="1"
                                     min="1"
-                                    step="1"
-                                >
+                                    step="1">
 
 
                                 <button
-                                    class="primary-button"
-                                    id="confirmSaleButton"
                                     type="button"
-                                >
+                                    class="primary-button"
+                                    id="confirmSaleButton">
+
                                     تسجيل البيع
+
                                 </button>
 
                             </div>
 
 
-
-                            <!-- Sale Summary -->
-
+                            <!-- Sale Total -->
                             <div class="sale-summary">
 
                                 <span>
@@ -380,12 +361,10 @@
                 <!-- =================================
                      PAGE 2 — PRODUCTS
                 ================================== -->
-
                 <section
                     class="page"
                     id="productsPage"
-                    data-page-content="products"
-                >
+                    data-page-content="products">
 
                     <div class="page-heading">
 
@@ -407,28 +386,23 @@
 
 
                         <button
-                            class="primary-button"
-                            id="addProductButton"
                             type="button"
-                        >
+                            class="primary-button"
+                            id="addProductButton">
+
                             + تسجيل منتج
+
                         </button>
 
                     </div>
 
 
-
-                    <!-- Product Registration Card -->
-
-                    <div class="card product-registration-card">
+                    <!-- Product Registration -->
+                    <div class="product-registration-card">
 
                         <div class="card-header">
 
                             <div>
-
-                                <span class="section-label">
-                                    NEW PRODUCT
-                                </span>
 
                                 <h3>
                                     منتج جديد
@@ -443,32 +417,30 @@
                         </div>
 
 
-
                         <form
                             id="productForm"
-                            class="product-form"
-                        >
-
+                            class="product-form">
 
                             <!-- Product Image -->
-
                             <div class="product-image-field">
 
                                 <div
                                     class="product-image-preview"
-                                    id="productImagePreview"
-                                >
+                                    id="productImagePreview">
+
                                     <span>
                                         صورة المنتج
                                     </span>
+
                                 </div>
 
 
                                 <label
                                     class="upload-image-button"
-                                    for="productImage"
-                                >
+                                    for="productImage">
+
                                     إرفاق صورة
+
                                 </label>
 
 
@@ -476,18 +448,15 @@
                                     type="file"
                                     id="productImage"
                                     accept="image/*"
-                                    hidden
-                                >
+                                    hidden>
 
                             </div>
 
 
-
                             <!-- Product Information -->
-
                             <div class="product-fields">
 
-
+                                <!-- Name -->
                                 <div class="form-group">
 
                                     <label for="productName">
@@ -498,13 +467,12 @@
                                         type="text"
                                         id="productName"
                                         placeholder="مثال: شيبسي"
-                                        required
-                                    >
+                                        required>
 
                                 </div>
 
 
-
+                                <!-- Price -->
                                 <div class="form-group">
 
                                     <label for="productPrice">
@@ -517,13 +485,12 @@
                                         placeholder="مثال: 15"
                                         min="0"
                                         step="0.01"
-                                        required
-                                    >
+                                        required>
 
                                 </div>
 
 
-
+                                <!-- Barcode -->
                                 <div class="form-group barcode-field">
 
                                     <label for="productBarcode">
@@ -537,16 +504,16 @@
                                             type="text"
                                             id="productBarcode"
                                             placeholder="سيتم تسجيل الكود بالكاميرا"
-                                            readonly
-                                        >
+                                            readonly>
 
 
                                         <button
                                             type="button"
                                             class="secondary-button"
-                                            id="scanProductBarcodeButton"
-                                        >
+                                            id="scanProductBarcodeButton">
+
                                             مسح الكود
+
                                         </button>
 
                                     </div>
@@ -554,15 +521,17 @@
                                 </div>
 
 
-
+                                <!-- Next -->
                                 <button
                                     type="submit"
-                                    class="primary-button next-button"
-                                >
+                                    class="primary-button next-button">
+
                                     التالي
+
                                     <span>
                                         ←
                                     </span>
+
                                 </button>
 
                             </div>
@@ -572,9 +541,7 @@
                     </div>
 
 
-
                     <!-- Registered Products -->
-
                     <div class="registered-products-section">
 
                         <div class="section-header">
@@ -594,9 +561,10 @@
 
                             <span
                                 class="products-count"
-                                id="productsCount"
-                            >
+                                id="productsCount">
+
                                 0 منتج
+
                             </span>
 
                         </div>
@@ -604,8 +572,7 @@
 
                         <div
                             class="products-grid"
-                            id="productsGrid"
-                        >
+                            id="productsGrid">
 
                             <!-- JS will add products here -->
 
@@ -618,175 +585,12 @@
 
 
                 <!-- =================================
-                     PAGE 3 — PHONE CONNECTION
+                     PAGE 3 — REPORTS
                 ================================== -->
-
-                <section
-                    class="page"
-                    id="connectionPage"
-                    data-page-content="connection"
-                >
-
-                    <div class="page-heading">
-
-                        <div>
-
-                            <span class="section-label">
-                                CONNECTION
-                            </span>
-
-                            <h2>
-                                ربط الهاتف
-                            </h2>
-
-                            <p>
-                                اربط الهاتف بالكمبيوتر لاستخدام الكاميرا كماسح Barcode.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="connection-container">
-
-
-                        <!-- Connection Card -->
-
-                        <div class="card connection-card">
-
-                            <div class="connection-icon">
-                                ◌
-                            </div>
-
-
-                            <span class="section-label">
-                                PHONE SCANNER
-                            </span>
-
-
-                            <h3>
-                                توصيل الهاتف
-                            </h3>
-
-
-                            <p>
-                                بعد توصيل الهاتف بالكمبيوتر،
-                                افتح الماسح من الهاتف وابدأ في قراءة Barcode المنتجات.
-                            </p>
-
-
-                            <div
-                                class="connection-status-large"
-                                id="connectionPageStatus"
-                            >
-                                الهاتف غير متصل
-                            </div>
-
-
-                            <button
-                                class="primary-button"
-                                id="connectionStartButton"
-                                type="button"
-                            >
-                                بدء الربط
-                            </button>
-
-                        </div>
-
-
-
-                        <!-- Connection Information Card -->
-
-                        <div class="card connection-info-card">
-
-                            <span class="section-label">
-                                HOW IT WORKS
-                            </span>
-
-
-                            <h3>
-                                طريقة العمل
-                            </h3>
-
-
-                            <div class="connection-steps">
-
-
-                                <div class="connection-step">
-
-                                    <span>
-                                        01
-                                    </span>
-
-                                    <p>
-                                        وصل الهاتف بالكمبيوتر.
-                                    </p>
-
-                                </div>
-
-
-
-                                <div class="connection-step">
-
-                                    <span>
-                                        02
-                                    </span>
-
-                                    <p>
-                                        افتح كاميرا الماسح على الهاتف.
-                                    </p>
-
-                                </div>
-
-
-
-                                <div class="connection-step">
-
-                                    <span>
-                                        03
-                                    </span>
-
-                                    <p>
-                                        وجّه الكاميرا إلى Barcode.
-                                    </p>
-
-                                </div>
-
-
-
-                                <div class="connection-step">
-
-                                    <span>
-                                        04
-                                    </span>
-
-                                    <p>
-                                        يصل الكود إلى STORE CORE ويتم استخدامه في البيع أو تسجيل المنتج.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- =================================
-                     PAGE 4 — REPORTS
-                ================================== -->
-
                 <section
                     class="page"
                     id="reportsPage"
-                    data-page-content="reports"
-                >
+                    data-page-content="reports">
 
                     <div class="page-heading">
 
@@ -809,9 +613,7 @@
                     </div>
 
 
-
                     <!-- Report Overview -->
-
                     <div class="reports-overview">
 
                         <div class="report-stat-card">
@@ -842,9 +644,7 @@
                     </div>
 
 
-
                     <!-- Report Controls -->
-
                     <div class="reports-controls">
 
                         <div class="report-search">
@@ -852,35 +652,29 @@
                             <input
                                 type="search"
                                 id="reportSearch"
-                                placeholder="ابحث عن منتج..."
-                            >
+                                placeholder="ابحث عن منتج...">
 
                         </div>
 
 
                         <button
-                            class="secondary-button"
-                            id="resetSelectedReportsButton"
                             type="button"
-                        >
+                            class="secondary-button"
+                            id="resetSelectedReportsButton">
+
                             تصفير التقارير المحددة
+
                         </button>
 
                     </div>
 
 
-
-                    <!-- Reports List Card -->
-
-                    <div class="card reports-list-card">
+                    <!-- Reports List -->
+                    <div class="reports-list-card">
 
                         <div class="card-header">
 
                             <div>
-
-                                <span class="section-label">
-                                    PRODUCT REPORTS
-                                </span>
 
                                 <h3>
                                     تقارير المنتجات
@@ -897,8 +691,7 @@
 
                         <div
                             class="reports-list"
-                            id="reportsList"
-                        >
+                            id="reportsList">
 
                             <!-- JS will add reports here -->
 
@@ -911,29 +704,27 @@
 
 
                 <!-- =================================
-                     PAGE 5 — CONTACT
+                     PAGE 4 — CONNECTION
                 ================================== -->
-
                 <section
                     class="page"
-                    id="developerPage"
-                    data-page-content="developer"
-                >
+                    id="connectionPage"
+                    data-page-content="connection">
 
                     <div class="page-heading">
 
                         <div>
 
                             <span class="section-label">
-                                CONTACT
+                                CONNECTION
                             </span>
 
                             <h2>
-                                تواصل معنا
+                                الربط
                             </h2>
 
                             <p>
-                                معلومات المطور ووسيلة التواصل.
+                                إدارة اتصال الهاتف المستخدم لمسح Barcode.
                             </p>
 
                         </div>
@@ -941,32 +732,89 @@
                     </div>
 
 
+                    <div class="connection-card">
 
-                    <!-- Developer Card -->
+                        <div class="connection-card-icon">
+                            ⛓
+                        </div>
 
-                    <div class="card developer-card">
 
+                        <div class="connection-card-content">
 
-                        <!-- Developer Image -->
+                            <span class="section-label">
+                                PHONE SCANNER
+                            </span>
 
-                        <div class="developer-image">
+                            <h3>
+                                ربط الهاتف
+                            </h3>
 
-                            <img
-                                src="./assets/developer-bg.jpg"
-                                alt="M O H A M M E D"
-                            >
+                            <p>
+                                قم بتوصيل الهاتف بالكمبيوتر لاستخدام كاميرا الهاتف
+                                في قراءة Barcode المنتجات.
+                            </p>
 
                         </div>
 
 
+                        <div class="connection-card-status">
+
+                            <span class="connection-status" id="connectionStatus">
+                                غير متصل
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            id="connectionButton">
+
+                            توصيل الهاتف
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     PAGE 5 — DEVELOPER
+                ================================== -->
+                <section
+                    class="page"
+                    id="developerPage"
+                    data-page-content="developer">
+
+                    <div class="developer-card">
+
+                        <!-- Developer Image -->
+                        <img
+                            src="./assets/developer-bg.jpg"
+                            alt="Developer Store Core"
+                            class="developer-image">
+
 
                         <!-- Developer Content -->
-
                         <div class="developer-content">
+
+                            <img
+                                src="./icon.png"
+                                alt="Developer Store Core"
+                                class="developer-icon">
+
 
                             <span class="section-label">
                                 DEVELOPER
                             </span>
+
+
+                            <h2>
+                                تواصل معنا
+                            </h2>
 
 
                             <h3>
@@ -984,9 +832,10 @@
                                 href="https://wa.me/201024759375"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="primary-button contact-button"
-                            >
+                                class="primary-button contact-button">
+
                                 تواصل معنا
+
                             </a>
 
                         </div>
@@ -998,11 +847,9 @@
             </main>
 
 
-
             <!-- =========================
                  FOOTER
             ========================== -->
-
             <footer class="footer">
 
                 <span>
@@ -1020,12 +867,10 @@
     <!-- =========================
          SCANNER MODAL
     ========================== -->
-
     <div
         class="modal-overlay"
         id="scannerModal"
-        hidden
-    >
+        hidden>
 
         <div class="modal scanner-modal">
 
@@ -1033,8 +878,10 @@
                 type="button"
                 class="modal-close"
                 data-close-modal
-            >
+                aria-label="إغلاق">
+
                 ×
+
             </button>
 
 
@@ -1062,11 +909,8 @@
                 <div class="scanner-frame">
 
                     <div class="scanner-corner top-right"></div>
-
                     <div class="scanner-corner top-left"></div>
-
                     <div class="scanner-corner bottom-right"></div>
-
                     <div class="scanner-corner bottom-left"></div>
 
                     <div class="scanner-line"></div>
@@ -1078,9 +922,10 @@
 
             <div
                 class="scanner-modal-status"
-                id="scannerModalStatus"
-            >
+                id="scannerModalStatus">
+
                 في انتظار قراءة Barcode...
+
             </div>
 
         </div>
@@ -1092,12 +937,10 @@
     <!-- =========================
          NOTIFICATION
     ========================== -->
-
     <div
         class="notification"
         id="notification"
-        hidden
-    >
+        hidden>
 
         <span id="notificationMessage"></span>
 
@@ -1108,7 +951,6 @@
     <!-- =========================
          JAVASCRIPT
     ========================== -->
-
     <script src="./script.js"></script>
 
 </body>
