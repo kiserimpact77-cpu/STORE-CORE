@@ -108,7 +108,6 @@ const pageTitles = {
     sales: "البيع",
     products: "تسجيل المنتجات",
     reports: "التقارير",
-    connection: "الربط",
     developer: "تواصل معنا / المطور"
 };
 
